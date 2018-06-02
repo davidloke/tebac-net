@@ -2,7 +2,7 @@ import os
 import platform
 
 def printWelcomeMessage(newLine):
-  print(newLine,newLine,'Welcome to Text Based Custom Named Entity Tagger (TeBaC) v0.1',sep='')
+  print(newLine,newLine,'Welcome to Text Based Custom Named Entity Tagger (TeBaC-NET) v0.1',sep='')
 
 def clearScreenCmd(): 
   if (platform.system() == 'Windows'):
@@ -11,7 +11,7 @@ def clearScreenCmd():
     os.system('clear')
 
 def printMainMenu(newLine):
-  print(newLine,'Main Menu',newLine,'=========',newLine,'1) Setup Session',newLine,'2) Begin Tagging',newLine,'3) Save/Load Custom Entity List',newLine,'4) About TebNET',newLine,'5) Quit',newLine, sep='')
+  print(newLine,'Main Menu',newLine,'=========',newLine,'1) Setup Session',newLine,'2) Begin Tagging',newLine,'3) Save/Load Custom Entity List',newLine,'4) About TeBaC-NET',newLine,'5) Quit',newLine, sep='')
 
 def printAcceptInput(newLine):
   return input(">> ")
@@ -37,7 +37,7 @@ def findAllEntities(searchTerm, inputString, entityTag):
 
 
 def setupSession(newLine):
-  print (newLine + 'Setting up TebNET Session')
+  print (newLine + 'Setting up TeBaC-NET Session')
   rawInputFile = input('Data File Path: ')
   if rawInputFile == '': 
     rawInputFile = None
@@ -55,7 +55,7 @@ def setupSession(newLine):
   return rawInputFile, rawOutputFile, inputOffset
 
 def quitApp(newLine): 
-  print ('Thank you for using TeBNET.')
+  print ('Thank you for using TeBaC-NET.')
   exit();
   
 def printSimpleEntityList(entityList): 
@@ -270,14 +270,14 @@ def manageSessionEntityList(sessionEntityList):
         
   
   
-def aboutTeBNET(newLine):
+def aboutTeBaCNET(newLine):
   clearScreenCmd()
-  print("{0}    TeBNET is a free Text Based Named Entity Tagger created by Lup Peng. {0}{0}    GitHub: {1}{0}{0}    Linkedin: {2}".format(newLine, "www.github.com/davidloke/?", "https://sg.linkedin.com/in/lup-peng-loke"))
+  print("{0}    TeBaC-NET is a free Text Based Named Entity Tagger created by Lup Peng. {0}{0}    GitHub: {1}{0}{0}    Linkedin: {2}".format(newLine, "https://github.com/davidloke/tebac-net", "https://sg.linkedin.com/in/lup-peng-loke"))
   input("{0}    Press enter to continue...".format(newLine))
 
 switchCase = { 1: setupSession,
                2: beginTagging,
-               4: aboutTeBNET,
+               4: aboutTeBaCNET,
                5: quitApp
              }
 
