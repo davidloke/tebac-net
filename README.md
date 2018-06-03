@@ -2,6 +2,16 @@
 Text Based Custom Named Entity Tagger
 Written in Python3.6
 
+In v0.1, do note the following:
+
+Entities are case sensitive (e.g. singapore != Singapore)
+For now, all occurrences of the word(s) will be tagged with the same custom type (e.g. 'Singapore' in 'Singaporean' will also be tagged)
+All custom types will be capitalized for disambiguity (e.g. 'Capital' becomes 'CAPITAL')
+Each entity-tag pair is unique for every line
+
+# Blog Post
+https://luppeng.wordpress.com/2018/05/29/text-based-named-entity-tagger-tebac-net/
+
 # How to Use
 To begin, simple clone this repository onto your local machine. 
 
@@ -57,6 +67,7 @@ Output: /home/demo/customOutputfilePath
 ```
 
 If you wish to change these values, simply follow the steps in this section again.
+
 
 ## Custom Named Entity Tagging
 ### Defining and Tagging Custom Named Entities 
@@ -171,13 +182,6 @@ If you wish to stop tagging, you can use the `:qq` command to save your current 
 Do remember the line number at the top of the tagging screen - this is the offset of the input file should you wish to continue in another session.
 
 
-
-In v0.1, do note the following: 
-* Entities are case sensitive (e.g. singapore != Singapore)
-* For now, all occurrences of the word(s) will be tagged with the same custom type (e.g. 'Singapore' in 'Singaporean' will also be tagged)
-* All custom types will be capitalized for disambiguity (e.g. 'Capital' becomes 'CAPITAL')
-* Each entity-tag pair is unique for every line
-
 ## Save/Load Custom Entity List
 If you wish to save your custom entity list (with its corresponding tags), press `3`, followed by `Enter/Return` in the main menu. You will be presented with the following submenu
 ```
@@ -193,16 +197,16 @@ Manage Entity List
 
 If you choose to Load/Save your entity list, you will need to provide the file path. Currently, saving to a file overwrites it completely. 
 
+
 ## More About TeBaC-NET
 To find out more about TeBaC-NET, press `4`, followed by `Enter/Return` in the main menu. 
 
+
 ## Quitting TeBaC-NET
 To quit TeBaC-NET, press `5`, followed by `Enter/Return` in the main menu. 
+
 
 ## Contact
 If you have any questions, feature requests, credits, please feel free to reach out to me either via my TeBaC-NET blog post, linkedin, or here on GitHub.
 
 Thank you - hope you find TeBaC-NET useful! :)
-
-# Blog Post
-https://luppeng.wordpress.com/2018/05/29/text-based-named-entity-tagger-tebac-net/
