@@ -121,6 +121,9 @@ def printDetailedEntityList(entityList, rawLine):
 def beginTagging(inputFile, inputFileOffset, outputFile, sessionEntityList):
   rawLineCounter = 0
   previousEntities = sessionEntityList
+  if sessionEntityList is None: 
+    previousEntities = []    
+  
   showDetailed = False
   rawLineDisplayPadding = ' ' * 4
 
