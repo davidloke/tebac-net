@@ -4,10 +4,10 @@ Written in Python3.6
 
 In v0.1, do note the following:
 
-Entities are case sensitive (e.g. singapore != Singapore)
-For now, all occurrences of the word(s) will be tagged with the same custom type (e.g. 'Singapore' in 'Singaporean' will also be tagged)
-All custom types will be capitalized for disambiguity (e.g. 'Capital' becomes 'CAPITAL')
-Each entity-tag pair is unique for every line
+* Entities are case sensitive (e.g. singapore != Singapore)
+* For now, all occurrences of the word(s) will be tagged with the same custom type (e.g. 'Singapore' in 'Singaporean' will also be tagged)
+* All custom types will be capitalized for disambiguity (e.g. 'Capital' becomes 'CAPITAL')
+* Each entity-tag pair is unique for every line
 
 # Blog Post
 https://luppeng.wordpress.com/2018/05/29/text-based-named-entity-tagger-tebac-net/
