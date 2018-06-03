@@ -53,7 +53,7 @@ Main Menu
 
 Input: /home/demo/dataFile (offset:0)
 Output: /home/demo/customOutputfilePath
->>
+>> _
 ```
 
 If you wish to change these values, simply follow the steps in this section again.
@@ -73,7 +73,7 @@ The first line (with offset) to be tagged will appear in the subsequent screen. 
 
     Entities: No entities saved
 
-    New Entity >>
+    New Entity >> _
 ```
 
 To tag a custom named entity, simply type the word(s) that appear in the sentence. You will then be asked to specify the custom type for it: 
@@ -93,7 +93,7 @@ Your tagged entities, together with its starting and ending indexes, will appear
 
     Added 1 counts of 'Gardens by the Bay' successfully
 
-    New Entity >>
+    New Entity >> _
 ```
 
 All occurrences of the words (even substrings) will be tagged with the same custom type. For example, if we add 'Singapore' as the 'CAPITAL':
@@ -110,7 +110,7 @@ All occurrences of the words (even substrings) will be tagged with the same cust
 
     Added 3 counts of 'Singapore' successfully
 
-    New Entity >>
+    New Entity >> _
 ```
 You can remove unwanted tags - please refer to the corresponding section below. 
 
@@ -136,7 +136,7 @@ For example, after typing `:aa` and pressing enter, the list of custom entities 
 
     Toggle detailed entity list
 
-    New Entity >>
+    New Entity >> _
 ```
 
 
