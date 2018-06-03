@@ -39,7 +39,7 @@ TeBaC-NET does not carry forward its state from one session to another (yet). Wh
 * Input File Offset
 * Output File Path
 
-To provide this values, press `1`, followed by `Enter/Return` at the main menu screen. Follow the instructions to provide the values: 
+To provide these values, press `1`, followed by `Enter/Return` at the main menu screen. Follow the prompts that appear subsequently: 
 
 ```
 Setting up TeBaC-NET Session
